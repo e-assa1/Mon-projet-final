@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WebNova CI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <nav>
+            <div class="logo">WebNova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="portfolio-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Notre <span class="gradient-text">Portfolio</span></h1>
+                <p>Découvrez nos réalisations et l'impact de nos solutions technologiques</p>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="web">Sites Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="portfolio-grid-full">
+                    
+                    <!-- Projet 1: E-commerce Bank of Africa -->
+                    <div class="portfolio-item-full" data-category="web ecommerce">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-commerce BOA">
+                                <div class="project-overlay">
+                                    <h3>Plateforme E-commerce BOA</h3>
+                                    <p>Bank of Africa Côte d'Ivoire</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Plateforme E-commerce Bancaire</h3>
+                                <p class="client">Bank of Africa Côte d'Ivoire</p>
+                                <p class="description">Développement d'une plateforme e-commerce complète intégrant les services bancaires digitaux avec des fonctionnalités de paiement Mobile Money et carte bancaire.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">150%</span>
+                                        <span class="stat-label">Augmentation des ventes</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">50,000+</span>
+                                        <span class="stat-label">Utilisateurs actifs</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">99.9%</span>
+                                        <span class="stat-label">Uptime</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                    <span>AWS</span>
+                                    <span>Stripe</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('boa-ecommerce')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2: App Mobile Orange Money -->
+                    <div class="portfolio-item-full" data-category="mobile">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Orange Money App">
+                                <div class="project-overlay">
+                                    <h3>Application Mobile Orange Money</h3>
+                                    <p>Orange Côte d'Ivoire</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Application Mobile Banking</h3>
+                                <p class="client">Orange Money Côte d'Ivoire</p>
+                                <p class="description">Application mobile complète pour services financiers digitaux avec authentification biométrique et paiements instantanés.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">200,000+</span>
+                                        <span class="stat-label">Téléchargements</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">4.8/5</span>
+                                        <span class="stat-label">Note utilisateurs</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">85%</span>
+                                        <span class="stat-label">Rétention J30</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>Flutter</span>
+                                    <span>Firebase</span>
+                                    <span>Dart</span>
+                                    <span>API Rest</span>
+                                    <span>Biométrie</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('orange-app')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3: Site Web Entreprise -->
+                    <div class="portfolio-item-full" data-category="web design">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Site Corporate">
+                                <div class="project-overlay">
+                                    <h3>Site Corporate NSIA</h3>
+                                    <p>NSIA Banque CI</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Site Web Corporate Moderne</h3>
+                                <p class="client">NSIA Banque Côte d'Ivoire</p>
+                                <p class="description">Refonte complète du site institutionnel avec un design moderne, animations fluides et optimisation SEO avancée.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">300%</span>
+                                        <span class="stat-label">Amélioration SEO</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">2.5s</span>
+                                        <span class="stat-label">Temps de chargement</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">95/100</span>
+                                        <span class="stat-label">Score PageSpeed</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>Vue.js</span>
+                                    <span>Nuxt.js</span>
+                                    <span>GSAP</span>
+                                    <span>Headless CMS</span>
+                                    <span>CDN</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('nsia-website')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4: Dashboard Analytics -->
+                    <div class="portfolio-item-full" data-category="web">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Dashboard">
+                                <div class="project-overlay">
+                                    <h3>Dashboard Analytics</h3>
+                                    <p>Société Générale CI</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Tableau de Bord Analytics</h3>
+                                <p class="client">Société Générale Côte d'Ivoire</p>
+                                <p class="description">Interface de visualisation de données sophistiquée avec graphiques interactifs et rapports automatisés en temps réel.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">10GB+</span>
+                                        <span class="stat-label">Données traitées/jour</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">500ms</span>
+                                        <span class="stat-label">Temps de réponse</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">24/7</span>
+                                        <span class="stat-label">Monitoring</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>Vue.js</span>
+                                    <span>D3.js</span>
+                                    <span>Python</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Redis</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('sgb-dashboard')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5: E-commerce Local -->
+                    <div class="portfolio-item-full" data-category="ecommerce mobile">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=600&h=400&fit=crop" alt="E-commerce Local">
+                                <div class="project-overlay">
+                                    <h3>Marketplace Ivoirienne</h3>
+                                    <p>Made in CI</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Marketplace Produits Locaux</h3>
+                                <p class="client">Made in Côte d'Ivoire</p>
+                                <p class="description">Plateforme e-commerce dédiée aux produits ivoiriens avec système de livraison optimisé et paiement Mobile Money.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">500+</span>
+                                        <span class="stat-label">Vendeurs actifs</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">10,000+</span>
+                                        <span class="stat-label">Produits</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">95%</span>
+                                        <span class="stat-label">Satisfaction client</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>React Native</span>
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                    <span>Cloudflare</span>
+                                    <span>Pusher</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('madeinCI')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6: Application Éducative -->
+                    <div class="portfolio-item-full" data-category="mobile design">
+                        <div class="portfolio-content">
+                            <div class="portfolio-image-full">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="App Education">
+                                <div class="project-overlay">
+                                    <h3>App Éducative CI</h3>
+                                    <p>Ministère Éducation Nationale</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Application Éducative Nationale</h3>
+                                <p class="client">Ministère de l'Éducation Nationale CI</p>
+                                <p class="description">Application mobile éducative pour l'apprentissage numérique avec contenus interactifs et suivi de progression.</p>
+                                
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">100,000+</span>
+                                        <span class="stat-label">Élèves connectés</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">1,000+</span>
+                                        <span class="stat-label">Cours disponibles</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">98%</span>
+                                        <span class="stat-label">Taux de réussite</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-used">
+                                    <span>React Native</span>
+                                    <span>Express.js</span>
+                                    <span>MongoDB</span>
+                                    <span>Socket.io</span>
+                                    <span>AWS S3</span>
+                                </div>
+                                
+                                <button class="btn-primary" onclick="openProjectDetails('education-app')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Ce que disent nos <span class="gradient-text">Clients</span></h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"WebNova a transformé notre vision en réalité digitale. Leur expertise technique et leur compréhension du marché ivoirien sont exceptionnelles."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Noura</strong>
+                            <span>Directrice Marketing, Bank of Africa CI</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                       <div class="testimonial-content">
+                           <p>"L'application mobile développée par WebNova a révolutionné notre approche client. L'interface est intuitive et les performances excellentes."</p>
+                       </div>
+                       <div class="testimonial-author">
+                           <strong>Mohamed Fanny</strong>
+                           <span>Chef de Projet Digital, Orange Money CI</span>
+                       </div>
+                   </div>
+                   <div class="testimonial-card">
+                       <div class="testimonial-content">
+                           <p>"Un partenaire technologique fiable qui comprend les enjeux business. Résultats au-delà de nos attentes et équipe très professionnelle."</p>
+                       </div>
+                       <div class="testimonial-author">
+                           <strong>Adje Bryann</strong>
+                           <span>DSI, Société Générale CI</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <section class="cta-section">
+           <div class="container">
+               <h2>Votre Projet sera le <span class="gradient-text">Prochain</span> ?</h2>
+               <p>Rejoignez nos clients satisfaits et donnez vie à vos idées</p>
+               <button class="btn-primary" onclick="window.location.href='contact.html'">Démarrer un projet</button>
+           </div>
+       </section>
+   </main>
+
+   <footer>
+       <div class="container">
+           <div class="footer-content">
+               <div class="footer-logo">
+                   <div class="logo">WebNova</div>
+                   <p>L'innovation technologique au service de la Côte d'Ivoire</p>
+               </div>
+               <div class="footer-contact">
+                   <h4>Contact Rapide</h4>
+                   <p>📞 +225 07 77 09 00 37</p>
+                   <p>📧 contact@webnova.ci</p>
+                   <p>📍 Abidjan, Cocody</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <script src="script.js"></script>
+   <script>
+       // Filtres portfolio
+       document.addEventListener('DOMContentLoaded', function() {
+           const filterBtns = document.querySelectorAll('.filter-btn');
+           const portfolioItems = document.querySelectorAll('.portfolio-item-full');
+
+           filterBtns.forEach(btn => {
+               btn.addEventListener('click', function() {
+                   const filter = this.dataset.filter;
+                   
+                   // Update active button
+                   filterBtns.forEach(b => b.classList.remove('active'));
+                   this.classList.add('active');
+                   
+                   // Filter items
+                   portfolioItems.forEach(item => {
+                       if (filter === 'all' || item.dataset.category.includes(filter)) {
+                           item.style.display = 'block';
+                           setTimeout(() => {
+                               item.style.opacity = '1';
+                               item.style.transform = 'translateY(0)';
+                           }, 100);
+                       } else {
+                           item.style.opacity = '0';
+                           item.style.transform = 'translateY(20px)';
+                           setTimeout(() => item.style.display = 'none', 300);
+                       }
+                   });
+               });
+           });
+       });
+
+       function openProjectDetails(projectId) {
+           const projects = {
+               'boa-ecommerce': {
+                   title: 'Plateforme E-commerce Bank of Africa',
+                   description: 'Développement complet d\'une solution e-commerce intégrée aux services bancaires digitaux...',
+                   url: 'https://wa.me/2250777090037?text=Je%20suis%20intéressé%20par%20un%20projet%20similaire%20à%20la%20plateforme%20BOA'
+               },
+               'orange-app': {
+                   title: 'Application Mobile Orange Money',
+                   description: 'Application mobile complète pour services financiers...',
+                   url: 'https://wa.me/2250777090037?text=Je%20souhaite%20développer%20une%20application%20mobile%20comme%20Orange%20Money'
+               }
+               // Ajouter d'autres projets...
+           };
+
+           const project = projects[projectId];
+           if (project) {
+               const message = `Bonjour WebNova! J'ai vu votre projet "${project.title}" et j'aimerais discuter d'un projet similaire.`;
+               window.open(`https://wa.me/2250777090037?text=${encodeURIComponent(message)}`, '_blank');
+           }
+       }
+   </script>
+</body>
+</html>

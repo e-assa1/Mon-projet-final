@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - WebNova CI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <nav>
+            <div class="logo">WebNova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Nos <span class="gradient-text">Services</span> Professionnels</h1>
+                <p>Solutions technologiques complètes pour propulser votre entreprise vers le succès digital</p>
+            </div>
+        </section>
+
+        <section class="services-detailed">
+            <div class="container">
+                <div class="service-category">
+                    <h2>💻 Développement Web</h2>
+                    <div class="service-packages">
+                        <div class="package-card">
+                            <h3>Site Vitrine Pro</h3>
+                            <div class="price">350,000 FCFA</div>
+                            <ul>
+                                <li>Design moderne et responsive</li>
+                                <li>5-8 pages optimisées</li>
+                                <li>Formulaire de contact</li>
+                                <li>Optimisation SEO</li>
+                                <li>Hébergement 1 an inclus</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('vitrine')">Commander</button>
+                        </div>
+                        <div class="package-card featured">
+                            <div class="badge">Populaire</div>
+                            <h3>E-commerce Complet</h3>
+                            <div class="price">950,000 FCFA</div>
+                            <ul>
+                                <li>Boutique en ligne complète</li>
+                                <li>Paiement Mobile Money/Visa</li>
+                                <li>Gestion stock automatisée</li>
+                                <li>Dashboard administrateur</li>
+                                <li>Application mobile incluse</li>
+                                <li>Formation équipe</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('ecommerce')">Commander</button>
+                        </div>
+                        <div class="package-card">
+                            <h3>Application Web Custom</h3>
+                            <div class="price">À partir de 1,500,000 FCFA</div>
+                            <ul>
+                                <li>Développement sur mesure</li>
+                                <li>Technologies modernes</li>
+                                <li>Base de données optimisée</li>
+                                <li>API sécurisées</li>
+                                <li>Tests et déploiement</li>
+                                <li>Maintenance 6 mois</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('webapp')">Devis personnalisé</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>📱 Applications Mobile</h2>
+                    <div class="service-packages">
+                        <div class="package-card">
+                            <h3>App Mobile Simple</h3>
+                            <div class="price">600,000 FCFA</div>
+                            <ul>
+                                <li>Design natif iOS/Android</li>
+                                <li>5-10 écrans</li>
+                                <li>Fonctionnalités de base</li>
+                                <li>Publication stores</li>
+                                <li>Support 3 mois</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('mobile-simple')">Commander</button>
+                        </div>
+                        <div class="package-card featured">
+                            <div class="badge">Recommandé</div>
+                            <h3>App Business Pro</h3>
+                            <div class="price">1,200,000 FCFA</div>
+                            <ul>
+                                <li>Application complète</li>
+                                <li>Système de notifications</li>
+                                <li>Authentification sécurisée</li>
+                                <li>Synchronisation cloud</li>
+                                <li>Analytics intégrés</li>
+                                <li>Maintenance 1 an</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('mobile-pro')">Commander</button>
+                        </div>
+                        <div class="package-card">
+                            <h3>App Fintech/E-commerce</h3>
+                            <div class="price">À partir de 2,000,000 FCFA</div>
+                            <ul>
+                                <li>Sécurité bancaire</li>
+                                <li>Paiements intégrés</li>
+                                <li>KYC/Conformité</li>
+                                <li>Backend robuste</li>
+                                <li>Tests de sécurité</li>
+                                <li>Support premium</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('fintech')">Consultation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>🎨 Design & Branding</h2>
+                    <div class="service-packages">
+                        <div class="package-card">
+                            <h3>Logo & Identité</h3>
+                            <div class="price">150,000 FCFA</div>
+                            <ul>
+                                <li>Logo professionnel</li>
+                                <li>Charte graphique</li>
+                                <li>Cartes de visite</li>
+                                <li>Formats vectoriels</li>
+                                <li>3 révisions incluses</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('logo')">Commander</button>
+                        </div>
+                        <div class="package-card">
+                            <h3>UI/UX Design</h3>
+                            <div class="price">400,000 FCFA</div>
+                            <ul>
+                                <li>Audit UX complet</li>
+                                <li>Wireframes détaillés</li>
+                                <li>Maquettes HD</li>
+                                <li>Prototypes interactifs</li>
+                                <li>Design system</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('ux')">Commander</button>
+                        </div>
+                        <div class="package-card">
+                            <h3>Branding Complet</h3>
+                            <div class="price">800,000 FCFA</div>
+                            <ul>
+                                <li>Identité complète</li>
+                                <li>Supports marketing</li>
+                                <li>Guidelines détaillées</li>
+                                <li>Déclinaisons digitales</li>
+                                <li>Formation équipe</li>
+                            </ul>
+                            <button class="btn-primary" onclick="requestService('branding')">Commander</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>🚀 Services Avancés</h2>
+                    <div class="advanced-services">
+                        <div class="advanced-service">
+                            <div class="service-icon">🤖</div>
+                            <h3>Intelligence Artificielle</h3>
+                            <p>Chatbots, analyse prédictive, automatisation</p>
+                            <span class="price-tag">Sur devis</span>
+                        </div>
+                        <div class="advanced-service">
+                            <div class="service-icon">☁️</div>
+                            <h3>Cloud & DevOps</h3>
+                            <p>Infrastructure cloud, automatisation CI/CD</p>
+                            <span class="price-tag">À partir de 300,000 FCFA</span>
+                        </div>
+                        <div class="advanced-service">
+                            <div class="service-icon">🔒</div>
+                            <h3>Cybersécurité</h3>
+                            <p>Audit sécurité, tests de pénétration</p>
+                            <span class="price-tag">À partir de 500,000 FCFA</span>
+                        </div>
+                        <div class="advanced-service">
+                            <div class="service-icon">📊</div>
+                            <h3>Analytics & BI</h3>
+                            <p>Tableaux de bord, Business Intelligence</p>
+                            <span class="price-tag">À partir de 700,000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2>Notre <span class="gradient-text">Processus</span> de Travail</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Analyse & Consultation</h3>
+                        <p>Étude approfondie de vos besoins et définition des objectifs</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Conception & Design</h3>
+                        <p>Création des maquettes et validation du design avec vous</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Développement</h3>
+                        <p>Développement avec des points de suivi réguliers</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Tests & Livraison</h3>
+                        <p>Tests complets, formation et mise en ligne</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Prêt à <span class="gradient-text">Démarrer</span> votre Projet ?</h2>
+                <p>Discutons de vos besoins et obtenez un devis personnalisé</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="window.location.href='contact.html'">Demander un devis</button>
+                    <button class="btn-secondary" onclick="window.open('https://wa.me/2250777090037', '_blank')">WhatsApp Direct</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">WebNova</div>
+                    <p>L'innovation technologique au service de la Côte d'Ivoire</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Rapide</h4>
+                    <p>📞 +225 07 77 09 00 37</p>
+                    <p>📧 contact@webnova.ci</p>
+                    <p>📍 Abidjan, Cocody</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function requestService(serviceType) {
+            const serviceNames = {
+                'vitrine': 'Site Vitrine Pro',
+                'ecommerce': 'E-commerce Complet',
+                'webapp': 'Application Web Custom',
+                'mobile-simple': 'App Mobile Simple',
+                'mobile-pro': 'App Business Pro',
+                'fintech': 'App Fintech/E-commerce',
+                'logo': 'Logo & Identité',
+                'ux': 'UI/UX Design',
+                'branding': 'Branding Complet'
+            };
+            
+            const message = `Bonjour WebNova! Je suis intéressé(e) par votre service "${serviceNames[serviceType]}". Pouvez-vous me fournir plus d'informations et un devis personnalisé?`;
+            const whatsappUrl = `https://wa.me/2250777090037?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>

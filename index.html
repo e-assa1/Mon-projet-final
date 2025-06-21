@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNova - Prestations Informatiques Révolutionnaires</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particules animées -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">WebNova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">L'Innovation <span class="gradient-text">Technologique</span> Redéfinie</h1>
+            <p class="hero-subtitle">WebNova transforme vos idées en solutions digitales révolutionnaires avec une expertise technique de pointe et une créativité sans limites</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='services.html'">Découvrir nos services</button>
+                <button class="btn-secondary" onclick="window.location.href='portfolio.html'">Voir notre portfolio</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cube"></div>
+            <div class="floating-cube"></div>
+            <div class="floating-cube"></div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services <span class="gradient-text">Révolutionnaires</span></h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="showServiceDetails('web')">
+                    <div class="service-icon">💻</div>
+                    <h3>Développement Web</h3>
+                    <p>Applications web sur mesure avec les technologies les plus avancées : React, Vue.js, Node.js, et bien plus.</p>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('mobile')">
+                    <div class="service-icon">📱</div>
+                    <h3>Applications Mobile</h3>
+                    <p>Applications natives et cross-platform performantes pour iOS et Android avec une UX exceptionnelle.</p>
+                    <div class="service-tech">
+                        <span>React Native</span>
+                        <span>Flutter</span>
+                        <span>Swift</span>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('devops')">
+                    <div class="service-icon">🚀</div>
+                    <h3>DevOps & Cloud</h3>
+                    <p>Infrastructure cloud scalable, automatisation des déploiements et optimisation des performances.</p>
+                    <div class="service-tech">
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('ai')">
+                    <div class="service-icon">🤖</div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Solutions IA personnalisées, machine learning et automatisation intelligente pour votre business.</p>
+                    <div class="service-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>OpenAI</span>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('design')">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Interfaces utilisateur modernes et intuitives avec une attention particulière à l'expérience utilisateur.</p>
+                    <div class="service-tech">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>Prototyping</span>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showServiceDetails('security')">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersécurité</h3>
+                    <p>Protection avancée de vos données et systèmes avec les dernières technologies de sécurité.</p>
+                    <div class="service-tech">
+                        <span>Penetration Testing</span>
+                        <span>SOC</span>
+                        <span>Audit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio Améliorée -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio <span class="gradient-text">Innovant</span></h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openPortfolioModal('ecommerce')">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="E-commerce Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Plateforme E-commerce Futuriste</h4>
+                            <p>Solution complète avec IA intégrée pour Bank of Africa CI</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>IA</span>
+                            </div>
+                            <button class="btn-view">Voir les détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('fintech')">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop" alt="Fintech App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Application Mobile Fintech</h4>
+                            <p>Solution de paiement mobile pour Orange Money CI</p>
+                            <div class="portfolio-tags">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>API</span>
+                            </div>
+                            <button class="btn-view">Voir les détails</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openPortfolioModal('dashboard')">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Analytics Dashboard" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard Analytics Avancé</h4>
+                            <p>Interface de visualisation pour Société Générale CI</p>
+                            <div class="portfolio-tags">
+                                <span>Vue.js</span>
+                                <span>D3.js</span>
+                                <span>Python</span>
+                            </div>
+                            <button class="btn-view">Voir les détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Transformons vos <span class="gradient-text">Idées</span> en Réalité</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contactez-nous</h3>
+                    <p>Prêt à révolutionner votre présence digitale ? Discutons de votre projet !</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>contact@webnova.ci</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+225 07 77 09 00 37</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🏢</span>
+                            <span>WhatsApp Business</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Abidjan, Cocody - Côte d'Ivoire</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Votre nom complet" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="tel" name="phone" placeholder="Votre numéro (+225...)" required>
+                    <select name="service" required>
+                        <option value="">Choisissez un service</option>
+                        <option value="web">Développement Web</option>
+                        <option value="mobile">Application Mobile</option>
+                        <option value="ecommerce">Site E-commerce</option>
+                        <option value="design">UI/UX Design</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    <textarea name="message" placeholder="Décrivez votre projet en détail" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">WebNova</div>
+                    <p>L'innovation technologique au service de la Côte d'Ivoire</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">💼</a>
+                        <a href="https://wa.me/2250777090037" class="social-icon">💬</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="services.html">Développement Web</a>
+                    <a href="services.html">Applications Mobile</a>
+                    <a href="services.html">E-commerce</a>
+                    <a href="services.html">Design UI/UX</a>
+                </div>
+                <div class="footer-info">
+                    <h4>Contact</h4>
+                    <p>📞 +225 07 77 09 00 37</p>
+                    <p>📧 contact@webnova.ci</p>
+                    <p>📍 Abidjan, Cocody</p>
+                    <p>🇨🇮 Côte d'Ivoire</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WebNova CI. Tous droits réservés. | Fait avec ❤️ en Côte d'Ivoire</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Portfolio -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Modal Service -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeServiceModal()">&times;</span>
+            <div id="serviceModalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
